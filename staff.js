@@ -300,7 +300,7 @@
     };
 
     // SALARY SORTING ----------------------
-    const sortLo = () => {
+    const sortHi = () => {
       sortedTableData = Array.from(staff).sort((a, b) => {
         const cleanDataA = a[5].replace("$", "").replace(",", "").replace(",", "");
         const cleanDataB = b[5].replace("$", "").replace(",", "").replace(",", "");
@@ -309,7 +309,7 @@
       console.table(sortedTableData)
       buildData(sortedTableData);
     };
-    const sortHi = () => {
+    const sortLo = () => {
       sortedTableData = Array.from(staff).sort((a, b) => {
         const cleanDataA = a[5].replace("$", "").replace(",", "").replace(",", "");
         const cleanDataB = b[5].replace("$", "").replace(",", "").replace(",", "");
