@@ -1,0 +1,468 @@
+/* -------------------------------
+- @name: Assignement1            -         
+- @CourseCode: SODV1201          -
+- @class: Intro Web Programming  -
+- @author: Jody Boston (devjody) -
+------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* ====== GLOBAL CSS =============================== */
+
+:root {
+  /* CSS */
+  --sal: #ffaf87;
+  --viv: #ff8e72;
+  --bit: #ed6a5e;
+  --aqu: #4ce0b3;
+  --gre: #377771;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.1;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* ===== MAIN CONTAINERS ===================== */
+
+.container.intro,
+.container.grade,
+.container.staff,
+.container.temp {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 25px 15px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.container.grade,
+.container.staff,
+.container.temp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+/* ==== WRAPPER BG ================================ */
+
+.wrapper-index,
+.wrapper-grade,
+.wrapper-staff,
+.wrapper-temp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-size: cover;
+}
+
+.wrapper-index {
+  background-image: url(./img/bg.svg);
+}
+.wrapper-grade {
+  background-image: url(./img/bg-grades.svg);
+}
+.wrapper-staff {
+  background-image: url(./img/bg-staff.svg);
+}
+.wrapper-temp {
+  background-image: url(./img/bg-temp.svg);
+}
+
+/* ====== FOOTER AND DATE ========================= */
+
+footer {
+  background-image: linear-gradient(
+    179.1deg,
+    rgba(55, 119, 113, 1) 20.8%,
+    rgba(104, 180, 173, 1) 164.5%
+  );
+  margin-top: auto;
+  width: 100vw;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+}
+.date-value {
+  color: var(--viv);
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+p {
+  font-size: 0.75rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== INDEX HOME PAGE ======================= */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+.banner-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 30vh;
+}
+.res-img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.logo,
+.profile {
+  width: 280px;
+  display: none;
+  transition: ease-in 500ms;
+}
+.col.nav-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100vw;
+  margin: 0;
+  padding: 5px;
+}
+.link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 0.3;
+  transition: ease-out 0.2s;
+  padding: 8px 5px;
+  border-radius: 0.125rem;
+}
+.link:hover {
+  font-weight: bold;
+  text-shadow: var(--bit) 2px 2px 0.5px;
+  background: var(--viv);
+  color: white;
+}
+
+.intro > p {
+  color: rgb(0, 0, 0, 0.7);
+  padding: 5px;
+  font-weight: 400;
+}
+p a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.hello {
+  font-size: 2.8rem;
+}
+.welcome {
+  color: var(--bit);
+  font-size: 1.5rem;
+}
+.codeshow {
+  align-self: center;
+  background-color: white;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 5px;
+}
+.codeshow-content {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: var(--viv);
+}
+
+.col-4 {
+  border: black 3px solid;
+}
+
+/* GRADING STYLING  =================================*/
+
+.grade-h1 {
+  font-size: 1.8rem;
+  font-family: "Graduate", cursive;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
+}
+
+#aGrade {
+  font-size: 1.2rem;
+  padding: 0px 25px;
+  margin-top: 50px;
+  text-decoration: none;
+  background-color: var(--bit);
+  border-radius: 5px;
+  box-shadow: #377771 0px 2px 2px;
+  font-family: "Graduate", cursive;
+}
+.subtitlep {
+  color: var(--sal);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.markInput {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: white;
+  background: var(--gre);
+  text-align: center;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.display-msg {
+  width: 90vw;
+  min-height: 18vh;
+  padding: 20px;
+  background: var(--gre);
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px;
+}
+.gradeOutput {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 0px;
+}
+.err1 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Graduate", cursive;
+  line-height: 1.4;
+}
+.err2 {
+  font-size: 0.7rem;
+  color: white;
+  line-height: 1.4;
+}
+
+/* ==== SORTING STYLING ========================= */
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sorting-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sorting-buttons input {
+  margin: 5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.table-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+table {
+  background: white;
+  text-align: center;
+  border: none;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+th {
+  color: var(--bit);
+  padding: 3px;
+  border: none;
+  font-size: 0.6rem;
+}
+td {
+  font-size: 0.35rem;
+  font-weight: 400;
+  padding: 1px 4px;
+  text-align: left;
+  color: #5b5858;
+}
+.h2-sort {
+  color: white;
+  font-size: 1rem;
+}
+
+/* TEMP STYLING  =================================*/
+
+.temp-title {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  text-shadow: black 1px 4px 10px;
+}
+.temp-convert-input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: white;
+  background: #432822;
+  text-align: center;
+}
+.temp-convert-button {
+  font-size: 1.5rem;
+  color: var(--bit);
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: #432822 0px 2px 2px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-family: "Bebas Neue", cursive;
+}
+.temp-output h2 {
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.h3-temp {
+  margin-top: 50px;
+  font-size: 0.5rem;
+  color: var(--bit);
+}
+.h4-temp {
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+/* ============================================================ */
+/* @MEDIA BELOW  ============================================== */
+/* ============================================================ */
+
+@media only screen and (min-width: 720px) {
+  .col.nav-content {
+    padding: 20px 0 20px;
+  }
+  .banner-img {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .res-img {
+    margin: 20px 0;
+  }
+  .link {
+    text-decoration: none;
+    font-size: 1.8vw;
+    transition: ease-out 0.2s;
+    padding: 10px 25px;
+    margin: 0 30px;
+  }
+  .container.intro {
+    padding: 50px;
+    margin-bottom: 50px;
+  }
+  .intro p {
+    font-size: 1.3rem;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-evenly;
+  }
+  .date-value {
+    color: var(--viv);
+    font-size: 1.9rem;
+    font-weight: bolder;
+  }
+  footer p {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .sodv {
+    align-self: center;
+  }
+  table {
+    padding: 10px 10px 40px 10px;
+    width: 80vw;
+  }
+  th {
+    padding: 5px;
+    font-size: 1.6rem;
+  }
+  td {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .container.temp {
+    width: 60vw;
+  }
+  .grade-h1 {
+    font-size: 8vw;
+    margin-top: 30px;
+  }
+  #aGrade {
+    font-size: 1.8rem;
+  }
+  .markInput {
+    font-size: 1.5rem;
+  }
+  .display-msg {
+    width: 50vw;
+    padding-top: 40px;
+    background: var(--gre);
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 5px 0px;
+  }
+  .err1 {
+    font-size: 1.8rem;
+  }
+  .err2 {
+    font-size: 1.2rem;
+  }
+  .temp-title {
+    font-size: 5vw;
+  }
+  .temp-convert-button {
+    font-size: 1.5rem;
+    padding: 5px 60px;
+  }
+  .temp-output h2 {
+    padding-left: 100px;
+  }
+}

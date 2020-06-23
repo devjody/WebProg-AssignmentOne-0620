@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="#" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="./style/simple-grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SODV1201 | A1 | Jody Boston</title>
+  </head>
+  <body>
+    <div class="wrapper-temp">
+      <header>
+        <nav class="row">
+          <div class="col nav-content">
+            <div class="nav-links">
+              <a href="index.html" class="link">🚵‍♂️ HOME</a>
+              <a href="grade.html" class="link">🎒 GRADER</a>
+              <a href="staff.html" class="link">👨‍💻 SORTER</a>
+              <a href="temp.html" class="link">⛺ TEMP</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- END OF HEADER -->
+
+      <!-- MAIN APP FOR PAGE -->
+      <main>
+        <section class="container">
+          <div class="row">
+            <div class="container temp center">
+              <h1 class="center temp-title">Fahrenheit to Celsius / Kelvin</h1>
+              <div class="container temp-input">
+                <input
+                  type="number"
+                  class="temp-convert-input"
+                  value="32"
+                  required
+                />
+                <button class="temp-convert-button">Convert!</button>
+              </div>
+
+              <div class="temp-output">
+                <h2><span class="outputC">0</span> &deg;C (Celsius)</h2>
+                <h2><span class="outputK">0</span> K (Kelvin)</h2>
+              </div>
+              <h3 class="h3-temp">Formula used for calculations</h3>
+              <h4 class="h4-temp">(0°F − 32) × 5/9</h4>
+              <h4 class="h4-temp">(0°F − 32) × 5/9 + 273.15</h4>
+              <h5>Reference: Google.com</h5>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- END OF MAIN CONTAINER -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="sodv">
+            <img src="./img/sodv.svg" alt="" width="250" />
+          </div>
+          <div class="date-output">
+            <span class="date-value"></span>
+            <p>Copyright &copy; Jody Boston</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF DISPLAY HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/temp.js"></script>
+  </body>
+</html>

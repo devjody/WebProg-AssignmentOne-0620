@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="#" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="./style/simple-grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SODV1201 | A1 | Jody Boston</title>
+  </head>
+  <body>
+    <div class="wrapper-grade">
+      <header>
+        <nav class="row">
+          <div class="col nav-content">
+            <div class="nav-links">
+              <a href="index.html" class="link">🚵‍♂️ HOME</a>
+              <a href="grade.html" class="link">🎒 GRADER</a>
+              <a href="staff.html" class="link">👨‍💻 SORTER</a>
+              <a href="temp.html" class="link">⛺ TEMP</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- END OF HEADER -->
+
+      <!-- MAIN APP FOR PAGE -->
+      <main>
+        <section class="container">
+          <div class="row">
+            <h1 class="grade-h1 center">Mark to Grade</h1>
+            <p class="subtitlep center">Enter value between 0 to 100</p>
+            <div class="input-grade center">
+              <form action="#" id="mainInput">
+                <label for="markInput"></label>
+                <input
+                  class="markInput"
+                  id="markInput"
+                  type="number"
+                  placeholder="Enter Mark Here..."
+                />
+
+                <!-- INPUT > TYPE BTN RTNS SINGLE VALUE -->
+                <div class="buttonDiv">
+                  <a href="#" class="grade" id="aGrade">Grade Me</a>
+                </div>
+              </form>
+              <!-- OUTPUT GRADE HERE -->
+              <div class="display-msg center">
+                <p><span class="gradeOutput"></span></p>
+                <p><span class="err1"></span></p>
+                <p><span class="err2"></span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- END OF MAIN CONTAINER -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="sodv">
+            <img src="./img/sodv.svg" alt="" width="250" />
+          </div>
+          <div class="date-output">
+            <span class="date-value"></span>
+            <p>Copyright &copy; Jody Boston</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF DISPLAY HTML -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/grade.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="#" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="./style/simple-grid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SODV1201 | A1 | Jody Boston</title>
+  </head>
+  <body>
+    <div class="wrapper-index">
+      <header>
+        <nav class="row">
+          <div class="col nav-content">
+            <div class="nav-links">
+              <a href="index.html" class="link">🚵‍♂️ HOME</a>
+              <a href="grade.html" class="link">🎒 GRADER</a>
+              <a href="staff.html" class="link">👨‍💻 SORTER</a>
+              <a href="temp.html" class="link">⛺ TEMP</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- END OF HEADER -->
+
+      <!-- MAIN APP FOR PAGE -->
+      <main>
+        <section class="container">
+          <div class="row">
+            <div class="container banner-img">
+              <div id="logo1">
+                <img
+                  class="res-img logo"
+                  src="./img/dj-text-white.svg"
+                  alt=""
+                />
+              </div>
+              <div id="logo2">
+                <img class="res-img profile" src="./img/sodv.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="container intro">
+              <h1 class="hello">Hello,</h1>
+              <h2 class="welcome">
+                Welcome to my school project for Intro to Web Programming!
+              </h2>
+
+              <p class="lp">
+                Here you will find a few Javascript coded pages with some
+                features like an input driven
+                <a href="grade.html">'Mark To Grade Converter'</a>, an
+                Object/Array based
+                <a href="sort.html">'Data Sorting Staff List'</a> and finally a
+                simple
+                <a href="temp.html">'Tempereture Conversion Tool'</a> from
+                Fahrenheit to either Celsius or Kelvin!
+              </p>
+              <p class="lp">
+                As you would expect this website is using the usual HTML/CSS,
+                however during this build I tested many CSS frameworks out like
+                Bootstrap, PaperCSS and Materialize! In the end, I decided to
+                give <a href="https://simplegrid.io/">'simplegrid.io'</a> a shot
+                and its fairly handy to work with.
+              </p>
+              <p class="lp">
+                For many popular frameworks, there is an option to run a CDN
+                link. However, this project has all the core files included in
+                the package and then some CSS to fine tune it to my design. Also
+                the artwork used is my own too!
+              </p>
+              <p>
+                Many frameworks I have tried so far use either flexbox grid
+                style model and mobile first idealogy, where the div's have
+                unique css properties attached to them, for example...
+              </p>
+              <div class="container center codeshow">
+                <span class="codeshow-content"
+                  >&lt;div class='container'><br />
+                  &lt;div class='row'><br />
+                  &lt;div class='col'></span
+                >
+              </div>
+              <p>
+                Once you understand the class system in each framework, it
+                allows you to quickly format your document to responsive sizes
+                fairly quickly. However one draw back is if you wish to make a
+                fully customised website, you may find yourself ripping apart
+                the framework to override the defaults.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- END OF MAIN CONTAINER -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="sodv">
+            <img src="./img/sodv.svg" alt="" width="250" />
+          </div>
+          <div class="date-output">
+            <span class="date-value"></span>
+            <p>Copyright &copy; Jody Boston</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF DISPLAY HTML -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
